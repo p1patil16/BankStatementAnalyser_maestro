@@ -1,0 +1,60 @@
+appId: com.dgv.ocr
+tags: 
+   - Android
+   - passing
+---
+- assertVisible: 
+   id: "com.dgv.ocr:id/txt_dashboard"
+- assertVisible: 
+   text: "Offline"
+- tapOn: 
+   text: "Offline"
+- assertVisible: "Offline Leads"
+- assertVisible: "Upload"
+- tapOn: "Upload"
+- back
+
+- assertVisible: 
+   text: "Ops Verification"
+- tapOn: "Ops Verification"
+- assertVisible: "Sr.No"
+- assertVisible: "Name"
+- assertVisible: "Phone"
+- assertVisible: "Status"
+- assertVisible:
+   text: "next"
+- tapOn: 
+   text: "next"
+- tapOn: 
+   text: "next"
+- assertVisible:
+   text: "prev"
+- tapOn: 
+   text: "prev"
+- back
+
+- assertVisible: 
+   text: "Completed"
+- tapOn: 
+   text: "Completed"
+- assertVisible: "Sr.No"
+- assertVisible: "Name and Phone\n"
+- assertVisible: "Status"
+- assertVisible:
+   text: "next"
+- tapOn: 
+   text: "next"
+- tapOn: 
+   text: "next"
+- assertVisible:
+   text: "prev"
+- tapOn: 
+   text: "prev"
+- back
+
+- assertVisible: 
+   text: "Logout"
+- assertVisible: 
+   id: "com.dgv.ocr:id/btn_fab"
+- tapOn:
+   id: "com.dgv.ocr:id/btn_fab"

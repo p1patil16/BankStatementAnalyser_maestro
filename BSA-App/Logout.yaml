@@ -1,0 +1,25 @@
+appId: com.dgv.ocr
+tags: 
+   - Android
+   - passing
+---
+- assertVisible: 
+   id: "com.dgv.ocr:id/txt_dashboard"
+- assertVisible: 
+   id: "com.dgv.ocr:id/logout"
+- tapOn: 
+   id: "com.dgv.ocr:id/logout"
+- assertVisible: 
+   text: "Do you want to exit"
+- assertVisible: 
+   text: "NO"
+- assertVisible: 
+   text: "YES"
+- tapOn: 
+   text: "NO"
+- tapOn: 
+   id: "com.dgv.ocr:id/logout"
+- assertVisible: 
+   text: "YES"
+- tapOn: 
+   text: "YES"

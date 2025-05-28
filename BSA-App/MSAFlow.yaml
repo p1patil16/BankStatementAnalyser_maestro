@@ -1,0 +1,162 @@
+appId: com.dgv.ocr
+tags: 
+   - Android
+   - passing
+---
+- assertVisible: 
+   id: "com.dgv.ocr:id/btn_fab"
+- tapOn:
+   id: "com.dgv.ocr:id/btn_fab"
+- assertVisible: 
+   id: "com.dgv.ocr:id/label_applicant_details"
+- assertVisible: 
+   id: "com.dgv.ocr:id/source_of_income_txt"
+- back
+- assertVisible:
+   text: "Do you want to go back? Data will be discarded."
+- assertVisible: "YES"
+- assertVisible: "NO"
+- tapOn: "NO"
+- back
+- tapOn: "YES"
+- assertVisible: 
+   id: "com.dgv.ocr:id/btn_fab"
+- tapOn:
+   id: "com.dgv.ocr:id/btn_fab"
+- assertVisible: 
+   text: "Bank Statement"
+- assertVisible: 
+   text: "Milk Statement"
+- tapOn:
+   text: "Milk Statement"
+- assertVisible: 
+   text: "Milk Society *"
+- assertVisible: 
+   text: "Select Milk Society"
+- tapOn: "Select Milk Society"
+
+- assertVisible: 
+   text: "BELAGULI"
+- tapOn: "BELAGULI"
+- assertVisible: 
+   text: "Farmer Name *"
+- assertVisible: 
+   text: "Enter Farmer Name"
+- tapOn: "Enter Farmer Name"
+- inputText: "Pavan Patil"
+- hideKeyboard
+- assertVisible: 
+   text: "Farmer Code *"
+- tapOn: 
+   id: "com.dgv.ocr:id/farmer_code"
+- inputText: "0016"
+- hideKeyboard
+- assertVisible: 
+   text: "Farmer Phone *"
+- assertVisible: 
+   text: "Enter Farmer Phone "
+- tapOn: "Enter Farmer Phone "
+- inputText: "8888095971"
+- hideKeyboard
+- assertVisible: 
+   text: "Verify"
+- tapOn: 
+   text: "Verify"
+- assertVisible: 
+   id: "com.dgv.ocr:id/consent_form"
+- assertVisible: 
+   id: "com.dgv.ocr:id/consent_checkbox"
+- tapOn: 
+   id: "com.dgv.ocr:id/consent_checkbox"
+- tapOn: 
+   id: "com.dgv.ocr:id/consent_checkbox"
+- tapOn: 
+   id: "com.dgv.ocr:id/consent_checkbox"
+- tapOn: 
+   id: "com.dgv.ocr:id/verify_txt"
+- assertVisible:
+   text: "OTP Verification"
+- assertVisible:
+   text: "Verify"
+- tapOn: 
+   text: "Verify"
+- assertVisible:
+   id: "com.dgv.ocr:id/otpET1"
+- tapOn: 
+   id: "com.dgv.ocr:id/otpET1"
+- inputText: "121231"
+- hideKeyboard
+- assertVisible:
+   text: "Verify"
+- tapOn: 
+   text: "Verify"
+
+- scrollUntilVisible:
+   element: 
+    id: "com.dgv.ocr:id/button_save"
+   direction: DOWN
+
+- assertVisible:
+   text: "Milk Processor *"
+- assertVisible:
+   text: "Select Processor"
+- tapOn: 
+   text: "Select Processor"
+- assertVisible: 
+   text: "DODLA DAIRY UNION"
+- tapOn: 
+   text: "DODLA DAIRY UNION"
+- assertVisible:
+   text: "Upload Milk Receipt *"
+- assertVisible:
+   id: "com.dgv.ocr:id/radioImageMsa"
+- tapOn: 
+   id: "com.dgv.ocr:id/radioImageMsa"
+- assertVisible:
+   id: "com.dgv.ocr:id/radioPDFMsa"
+- tapOn: 
+   id: "com.dgv.ocr:id/radioPDFMsa"
+- assertVisible:
+   text: "Select Files"
+- tapOn:
+   text: "Select Files"
+
+- extendedWaitUntil:
+   visible: 
+    text: "Submit"
+   timeout: 15000
+
+- assertVisible:
+   text: "Capture First Page of Passbook *"
+- assertVisible:
+   id: "com.dgv.ocr:id/cameraBtn"
+- tapOn: 
+   id: "com.dgv.ocr:id/cameraBtn"
+- extendedWaitUntil:
+   visible: 
+    text: "Submit"
+   timeout: 15000
+- assertVisible: 
+   id: "com.dgv.ocr:id/delete_button"
+- tapOn: 
+   id: "com.dgv.ocr:id/delete_button"
+- tapOn: 
+   id: "com.dgv.ocr:id/cameraBtn"
+- extendedWaitUntil:
+   visible: 
+    text: "Submit"
+   timeout: 15000
+- assertVisible: 
+   text: "Please check the spelling of identifiers before submitting."
+- assertVisible: 
+   id: "com.dgv.ocr:id/upload_statements"
+- tapOn: 
+   id: "com.dgv.ocr:id/upload_statements"
+- extendedWaitUntil:
+   visible: 
+    text: "Submit"
+   timeout: 25000
+- assertVisible: 
+   text: "Submit"
+- tapOn: 
+   text: "Submit"

@@ -1,0 +1,17 @@
+<testsuites>
+    <testsuite name="Test Suite" tests="1" failures="0" time="59">
+        <testcase id="Login" name="Login" classname="Login" time="59" status="SUCCESS"/>
+    </testsuite>
+    <testsuite name="Test Suite" tests="1" failures="0" time="65">
+        <testcase id="Homepage" name="Homepage" classname="Homepage" time="65" status="SUCCESS"/>
+    </testsuite>
+    <testsuite name="Test Suite" tests="1" failures="0" time="218">
+        <testcase id="BSAFlow" name="BSAFlow" classname="BSAFlow" time="218" status="SUCCESS"/>
+    </testsuite>
+    <testsuite name="Test Suite" tests="1" failures="0" time="172">
+        <testcase id="MSAFlow" name="MSAFlow" classname="MSAFlow" time="172" status="SUCCESS"/>
+    </testsuite>
+    <testsuite name="Test Suite" tests="1" failures="0" time="19">
+        <testcase id="Logout" name="Logout" classname="Logout" time="19" status="SUCCESS"/>
+    </testsuite>
+</testsuites>

@@ -1,0 +1,46 @@
+appId: com.dgv.ocr
+tags: 
+   - Android
+   - tagging
+---
+- launchApp
+- assertVisible: 
+   id: "com.dgv.ocr:id/logo"
+- assertVisible:
+   text: "Enter Your Mobile Number"
+- assertVisible:
+   id: "com.dgv.ocr:id/edittext_login_number"
+-  tapOn: "Enter your mobile number"
+- inputText: 
+   text: "8888095971"
+- hideKeyboard
+- assertVisible: 
+   id: "com.dgv.ocr:id/biometric_icon"
+- assertVisible: 
+   id: "com.dgv.ocr:id/verified_biometric"
+- assertVisible: 
+   id: "com.dgv.ocr:id/button_login_continue"
+- tapOn: 
+   id: "com.dgv.ocr:id/button_login_continue"
+
+- assertVisible: 
+   id: "com.dgv.ocr:id/tv_otp_verification"
+- assertVisible: 
+   id: "com.dgv.ocr:id/btn_verify"
+- tapOn: 
+   id: "com.dgv.ocr:id/btn_verify"
+
+- assertVisible: 
+   text: "close"
+- tapOn: "close"
+- assertVisible:
+   id: "com.dgv.ocr:id/txt_resend"
+- tapOn: 
+   id: "com.dgv.ocr:id/txt_resend"
+- assertVisible:
+   id: "com.dgv.ocr:id/otpET1"
+- inputText: "121231"
+- assertVisible: 
+   id: "com.dgv.ocr:id/btn_verify"
+- tapOn:
+   id: "com.dgv.ocr:id/btn_verify"
