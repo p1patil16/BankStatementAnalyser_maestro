@@ -19,7 +19,7 @@ tags:
 - tapOn: "Ops Verification"
 - assertVisible: "Sr.No"
 - assertVisible: "Name"
-- assertVisible: "Phone"
+- assertVisible: "Mobile No."
 - assertVisible: "Status"
 - assertVisible:
    text: "next"
@@ -38,7 +38,8 @@ tags:
 - tapOn: 
    text: "Completed"
 - assertVisible: "Sr.No"
-- assertVisible: "Name and Phone\n"
+- assertVisible: "Name"
+- assertVisible: "Mobile No."
 - assertVisible: "Status"
 - assertVisible:
    text: "next"
